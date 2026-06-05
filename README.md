@@ -28,9 +28,11 @@ A monthly planner to add and view scheduled meetings, calls, and proposals linke
 
 ### 6. Reports & Analytics
 A comprehensive metrics page displaying conversion statistics, top performing sales representatives, lead acquisition channels (Website, Referrals, Social Media, Campaigns), and a 30-day Leads Over Time chart.
+![Reports View](images/reports.png)
 
 ### 7. Contacts Directory
 A direct contacts list showing names, companies, and starred items, with interactive call (`tel:`) and email (`mailto:`) links to reach customers instantly.
+![Contacts View](images/contacts.png)
 
 ---
 
@@ -66,7 +68,9 @@ LeadCRM/
 │   ├── leads.png
 │   ├── add_lead.png
 │   ├── tasks.png
-│   └── calendar.png
+│   ├── calendar.png
+│   ├── reports.png
+│   └── contacts.png
 ├── backend/                 # Node.js + Express backend
 │   ├── config/              # Mongoose DB connection setup
 │   ├── controllers/         # MVC controller queries (lead, event, task, AI)
