@@ -1,6 +1,7 @@
-const LEADS_URL = 'http://localhost:5000/api/leads';
-const TASKS_URL = 'http://localhost:5000/api/tasks';
-const EVENTS_URL = 'http://localhost:5000/api/events';
+const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+const LEADS_URL = `${API_BASE}/api/leads`;
+const TASKS_URL = `${API_BASE}/api/tasks`;
+const EVENTS_URL = `${API_BASE}/api/events`;
 
 // Leads APIs
 export const getLeads = async (params = {}) => {
@@ -155,7 +156,7 @@ export const deleteEvent = async (id) => {
   return response.json();
 };
 
-const AI_URL = 'http://localhost:5000/api/ai';
+const AI_URL = `${API_BASE}/api/ai`;
 
 export const scoreLeadAI = async (leadData) => {
   const response = await fetch(`${AI_URL}/score`, {
